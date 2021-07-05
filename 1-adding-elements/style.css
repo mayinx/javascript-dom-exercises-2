@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+
+.button-add {
+  font-size: 1.5rem;
+  align-self: center;
+  background: transparent;
+  border: 2px solid lightsalmon;
+  border-radius: 10%;
+  transition: all 0.2s ease-in;
+  font-family: inherit;
+}
+
+.button-add:hover {
+  background: lightsalmon;
+  color: white;
+  cursor: pointer;
+}
+
+.button-add:active {
+  background: darksalmon;
+}
+
+.container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.box {
+  height: 100px;
+  flex-basis: 100px;
+  flex-shrink: 1;
+  background-color: salmon;
+  transition: all 0.2s ease-out;
+}
+
+.box:hover {
+  transform: scale(1.2);
+}
+
+.box:nth-of-type(even) {
+  background-color: lightsalmon;
+}
